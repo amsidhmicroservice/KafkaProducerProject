@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.amsidh.mvc</groupId>
-    <artifactId>Kafka-Producer-Project</artifactId>
+    <artifactId>KafkaProducerProject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Kafka-Producer-Project</name>
-    <description>Kafka-Producer-Project project for Spring Boot</description>
+    <name>KafkaProducerProject</name>
+    <description>KafkaProducerProject project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
     </properties>

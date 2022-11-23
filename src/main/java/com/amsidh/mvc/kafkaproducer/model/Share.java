@@ -1,4 +1,4 @@
-package com.amsidh.mvc.kafkaproducerconsumerproject.model;
+package com.amsidh.mvc.kafkaproducer.model;
 
 import lombok.*;
 
