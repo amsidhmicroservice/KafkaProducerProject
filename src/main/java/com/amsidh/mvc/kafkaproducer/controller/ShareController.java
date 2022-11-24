@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
 @RequiredArgsConstructor
@@ -25,7 +26,7 @@ public class ShareController {
 
 
     @PostMapping(value = "/share", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-    public Share sendShareToKafka(@RequestBody Share share) throws ExecutionException, InterruptedException, JsonProcessingException {
+    public Share sendShareToKafka(@RequestBody Share share) throws ExecutionException, InterruptedException, IOException {
         log.info("Inside ShareController's sendShareToKafka method");
         String message = objectMapper.writeValueAsString(share);
         String kafkaResponse = topicProducer.send(message);
